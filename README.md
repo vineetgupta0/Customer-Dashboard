@@ -52,7 +52,7 @@ src/
 ```npm install```
 
 4. Create a `.env` file in the root directory and add your Unsplash API key:
-```REACT_APP_UNSPLASH_ACCESS_KEY=your_unsplash_api_key_here```
+```REACT_APP_UNSPLASH_ACCESS_KEYS='API_KEY_1,API_KEY_2```
 5. Start the development server:
 ```npm start```
 6. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
@@ -94,11 +94,10 @@ The project uses Material-UI (MUI) for styling and layout. Custom styles are app
 
 ## 🔮 Future Improvements
 
-1.  Implement error handling, especially for API calls.
-2.  Add pagination or virtualization for better performance with large customer lists.
-3.  Implement state management solution (e.g., Redux) for more complex data flows.
-4.  Add unit and integration tests.
-5.  Enhance accessibility features.
+1.  [x] Implement error handling, especially for API calls.
+2.  [ ] Add pagination or virtualization for better performance with large customer lists.
+3.  [ ] Implement state management solution (e.g., Redux) for more complex data flows.
+4.  [ ] Add unit and integration tests.
 
 ## 🤝 Contributing
 
