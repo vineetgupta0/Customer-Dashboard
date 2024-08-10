@@ -47,7 +47,7 @@ src/
 1. Clone the repository:
 ```git clone https://github.com/vineetgupta0/Customer-Dashboard.git```
 2. Navigate to the project directory:
-```cd customer-details-portal```
+```cd Customer-Dashboard```
 3. Install dependencies:
 ```npm install```
 
@@ -60,27 +60,27 @@ src/
 
 ## 🧩 Component Details
 
-### 🌟 App (App.tsx)
+###  App (App.tsx)
 The main component that orchestrates the entire application. It uses the `useCustomers` hook to fetch customer data and manages the state of the selected customer.
 
-### 📋 CustomerList (components/CustomerList.tsx)
+###  CustomerList (components/CustomerList.tsx)
 Displays a scrollable list of customers. It receives the list of customers, the ID of the selected customer, and a function to handle customer selection as props.
 
-### 🃏 CustomerCard (components/CustomerCard.tsx)
+###  CustomerCard (components/CustomerCard.tsx)
 Represents an individual customer in the list. It uses MUI's `ListItemButton` for interactive list items and implements a selected state for visual feedback.
 
-### 📄 CustomerDetails (components/CustomerDetails.tsx)
+###  CustomerDetails (components/CustomerDetails.tsx)
 Displays detailed information about a selected customer, including their name, title, address, and a grid of random photos.
 
-### 🖼️ PhotoGrid (components/PhotoGrid.tsx)
+###  PhotoGrid (components/PhotoGrid.tsx)
 Displays a grid of photos using MUI's `Grid` component. It applies hover effects and rounded corners to images.
 
 ## 🎣 Custom Hooks
 
-### 👥 useCustomers (hooks/useCustomers.ts)
+###  useCustomers (hooks/useCustomers.ts)
 A custom hook for fetching and managing customer data. It generates a mock list of 1000 customers.
 
-### 📸 usePhotos (hooks/usePhotos.ts)
+###  usePhotos (hooks/usePhotos.ts)
 A custom hook for fetching random photos from the Unsplash API. It implements a polling mechanism to fetch new photos every 10 seconds.
 
 ## 🎨 Styling

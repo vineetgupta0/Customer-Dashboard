@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <Container maxWidth="lg">
         <Box sx={{ my: 4 }}>
           <Typography variant="h2" component="h1" gutterBottom align="center">
-            Customer Details Portal
+            Vineet Customer Details Portal
           </Typography>
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} md={4}>
