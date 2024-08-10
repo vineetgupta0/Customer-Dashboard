@@ -1,0 +1,67 @@
+npx create-react-app customer-portal --template typescript
+cd customer-portal
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material axios
+npm start
+
+'''
+Folder Structure 
+
+
+src/
+  components/
+    CustomerList.tsx
+    CustomerCard.tsx
+    CustomerDetails.tsx
+    PhotoGrid.tsx
+  hooks/
+    useCustomers.ts
+    usePhotos.ts
+  types/
+    Customer.ts
+    Photo.ts
+  App.tsx
+  index.tsx
+
+'''
+
+
+
+
+
+'''
+
+This implementation follows React and TypeScript best practices:
+
+Uses functional components and hooks
+Implements memoization for performance optimization
+Uses custom hooks for data fetching and state management
+Implements proper typing with TypeScript
+Uses React.memo for optimizing re-renders of CustomerCard
+Implements virtualization for the customer list (consider using react-window for large lists)
+Fetches photos from a public API (Unsplash in this example)
+Updates photos every 10 seconds
+
+To further improve the application:
+
+Implement proper error handling and loading states
+Add unit tests using Jest and React Testing Library
+Implement server-side pagination for the customer list
+Use a state management library like Redux or Recoil for more complex state management
+Implement a design system or use a UI library like Material-UI for consistent styling
+Add accessibility features (ARIA attributes, keyboard navigation)
+Optimize for performance using React.lazy and Suspense for code-splitting
+
+Remember to replace 'YOUR_UNSPLASH_API_KEY' with an actual API key from Unsplash or use another public API for fetching random images.
+This implementation provides a solid foundation for the customer details portal. You can expand on this structure to add more features and refine the user interface as needed.
+'''
+
+For better security 
+Create a file named .env in your project root and add:
+REACT_APP_UNSPLASH_ACCESS_KEY=your_actual_access_key_here
+update your usePhotos.ts to use this environment variable:
+const UNSPLASH_ACCESS_KEY = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
+ add .env to your .gitignore 
+
+
+
+
